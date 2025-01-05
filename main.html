@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoFood Gateway</title>
+
+    <!-- Simple CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('vegetable.jpg') no-repeat center center; /* Add your image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for Lock */
+        .lock-container {
+            text-align: center;
+        }
+
+        /* Header styling */
+        h1 {
+            position: absolute;
+            top: 10%;
+            font-size: 3em;
+            color: #eb310c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Lock button styling */
+        .lock-button {
+            font-size: 30px;
+            padding: 20px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            transition: background-color 0.3s ease;
+        }
+
+        .lock-button:hover {
+            background-color: rgba(222, 225, 13, 1); /* Fully opaque yellow on hover */
+        }
+
+        /* Lock icon styling */
+        .lock-icon {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Welcome Header -->
+    <h1>Welcome to IndoFood</h1>
+
+    <!-- Lock icon with button -->
+    <div class="lock-container">
+        <form action="login.php" method="GET">
+            <button class="lock-button" type="submit">
+                <span class="lock-icon">🔒</span>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

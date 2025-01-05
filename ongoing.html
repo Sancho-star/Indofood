@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indofood - Ongoing Programs</title>
+    <style>
+        /* Style for the carousel container */
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 2px;
+            
+        }
+
+        /* Style for the sliding images */
+        .carousel-slide {
+            display: flex;
+            width: 100%;
+            animation: slide 20s infinite linear;
+        }
+
+        /* Style for individual image cards */
+        .carousel-slide img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animation for sliding effect */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Ensure the images wrap back to the start */
+        .carousel-slide:hover {
+            animation-play-state: paused; /* Pause on hover */
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .carousel-slide img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ongoing Images Section -->
+<section id="ongoing">
+    <h2>Our Receipes..</h2>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="samosa.png" alt="pic1">
+            <img src="panipuri.jpg" alt="pic2">
+            <img src="image.png" alt="Movie 3">
+            <img src="dosa.png" alt="Movie 4">
+            <img src="samosa.png" alt="Movie 5">
+            <img src="panipuri.jpg" alt="Movie 6">
+            <img src="image.png" alt="Movie 7">
+            <img src="dosa.png" alt="Movie 8">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
